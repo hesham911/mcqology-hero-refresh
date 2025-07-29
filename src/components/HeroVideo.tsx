@@ -3,7 +3,7 @@ import { Play, ArrowLeft } from "lucide-react";
 
 const HeroVideo = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden" dir="rtl">
+    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden" dir="rtl">
       {/* Background Video Placeholder */}
       <div className="absolute inset-0 z-0">
         <div className="relative w-full h-full bg-gradient-to-br from-medical-teal via-medical-blue to-medical-teal/80">
@@ -41,10 +41,10 @@ const HeroVideo = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-medical-teal px-8 py-4 text-xl font-semibold rounded-full backdrop-blur-sm transition-all duration-300"
+              className="border-2 border-white text-white hover:bg-white hover:text-medical-teal px-8 py-4 text-xl font-semibold rounded-full backdrop-blur-sm transition-all duration-300 group"
             >
               <Play className="w-6 h-6 ml-3" />
-              شاهد الفيديو التعريفي
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">شاهد الفيديو التعريفي</span>
             </Button>
           </div>
 

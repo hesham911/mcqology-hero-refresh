@@ -66,88 +66,87 @@ const QBanksSection = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
-            Explore <span className="text-medical-green">QBanks</span>
+          <h2 className="text-4xl font-bold text-foreground mb-4" dir="rtl">
+            الجامعات التي <span className="text-medical-green">ندعمها</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Access thousands of high-quality medical MCQs designed to help you ace your exams. 
-            With detailed explanations and personalized performance tracking.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto" dir="rtl">
+            ندعم العديد من الجامعات الطبية الرائدة ونقدم محتوى تعليمي مخصص لكل جامعة
           </p>
         </div>
 
-        {/* University Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {universities.map((university, index) => (
-            <Card key={index} className="group hover:shadow-glow transition-all duration-300 hover:-translate-y-2 border-border/50">
-              <CardHeader className="p-0">
-                <div className="relative overflow-hidden rounded-t-lg">
-                  <img 
-                    src={university.image} 
-                    alt={university.name}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge variant="secondary" className="bg-background/90 text-foreground">
-                      {university.rating} ⭐
-                    </Badge>
-                  </div>
-                </div>
-              </CardHeader>
-              
-              <CardContent className="p-6">
-                <CardTitle className="text-xl mb-3 text-foreground group-hover:text-medical-green transition-colors">
-                  {university.name}
-                </CardTitle>
-                <p className="text-muted-foreground mb-4 line-clamp-2">
-                  {university.description}
-                </p>
-                
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-4 text-sm">
-                    <div className="flex items-center space-x-1">
-                      <BookOpen className="w-4 h-4 text-medical-green" />
-                      <span className="font-semibold">{university.questions}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Users className="w-4 h-4 text-medical-green" />
-                      <span className="font-semibold">{university.students}</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-wrap gap-2">
-                  {university.subjects.slice(0, 3).map((subject, idx) => (
-                    <Badge key={idx} variant="outline" className="text-xs">
-                      {subject}
-                    </Badge>
-                  ))}
-                  {university.subjects.length > 3 && (
-                    <Badge variant="outline" className="text-xs">
-                      +{university.subjects.length - 3} more
-                    </Badge>
-                  )}
-                </div>
-              </CardContent>
-              
-              <CardFooter className="p-6 pt-0 flex gap-3">
-                <Button variant="outline" size="sm" className="flex-1">
-                  Preview
-                </Button>
-                <Button variant="medical" size="sm" className="flex-1">
-                  Start Now
-                  <ExternalLink className="w-4 h-4 ml-1" />
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
-
-        {/* View More Button */}
-        <div className="text-center">
-          <Button variant="accent" size="lg">
-            See All QBanks
-            <ExternalLink className="w-5 h-5 ml-2" />
-          </Button>
+        {/* University Logos Slider */}
+        <div className="relative overflow-hidden">
+          <div className="flex animate-scroll space-x-12">
+            {/* First set of logos */}
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <img src="/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png" alt="Jordan University" className="w-20 h-20 object-contain" />
+            </div>
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-sm font-bold text-medical-teal">Yarmouk</div>
+                <div className="text-xs text-muted-foreground">University</div>
+              </div>
+            </div>
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-sm font-bold text-medical-teal">JUST</div>
+                <div className="text-xs text-muted-foreground">University</div>
+              </div>
+            </div>
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-sm font-bold text-medical-teal">Mutah</div>
+                <div className="text-xs text-muted-foreground">University</div>
+              </div>
+            </div>
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-sm font-bold text-medical-teal">Hashemite</div>
+                <div className="text-xs text-muted-foreground">University</div>
+              </div>
+            </div>
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-sm font-bold text-medical-teal">Al-Balqa</div>
+                <div className="text-xs text-muted-foreground">University</div>
+              </div>
+            </div>
+            
+            {/* Duplicate set for seamless scroll */}
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <img src="/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png" alt="Jordan University" className="w-20 h-20 object-contain" />
+            </div>
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-sm font-bold text-medical-teal">Yarmouk</div>
+                <div className="text-xs text-muted-foreground">University</div>
+              </div>
+            </div>
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-sm font-bold text-medical-teal">JUST</div>
+                <div className="text-xs text-muted-foreground">University</div>
+              </div>
+            </div>
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-sm font-bold text-medical-teal">Mutah</div>
+                <div className="text-xs text-muted-foreground">University</div>
+              </div>
+            </div>
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-sm font-bold text-medical-teal">Hashemite</div>
+                <div className="text-xs text-muted-foreground">University</div>
+              </div>
+            </div>
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border">
+              <div className="text-center">
+                <div className="text-sm font-bold text-medical-teal">Al-Balqa</div>
+                <div className="text-xs text-muted-foreground">University</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

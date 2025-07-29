@@ -15,15 +15,27 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8 space-x-reverse">
-            <a href="#home" className="text-foreground hover:text-medical-green transition-colors">
+            <a href="#home" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
               الرئيسية
             </a>
-            <a href="#qbanks" className="text-foreground hover:text-medical-green transition-colors">الفرقه</a>
+            <a href="#qbanks" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('qbanks')?.scrollIntoView({ behavior: 'smooth' });
+            }}>الفرقه</a>
             
-            <a href="#about" className="text-foreground hover:text-medical-green transition-colors">
+            <a href="#about" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
               حولنا
             </a>
-            <a href="#contact" className="text-foreground hover:text-medical-green transition-colors">
+            <a href="#contact" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
               تواصل معنا
             </a>
           </nav>
@@ -52,16 +64,32 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border">
             <nav className="flex flex-col space-y-4 pt-4">
-              <a href="#home" className="text-foreground hover:text-medical-green transition-colors py-2">
+              <a href="#home" className="text-foreground hover:text-medical-green transition-colors py-2" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+                setIsMenuOpen(false);
+              }}>
                 الرئيسية
               </a>
-              <a href="#qbanks" className="text-foreground hover:text-medical-green transition-colors py-2">
+              <a href="#qbanks" className="text-foreground hover:text-medical-green transition-colors py-2" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('qbanks')?.scrollIntoView({ behavior: 'smooth' });
+                setIsMenuOpen(false);
+              }}>
                 الفرقه
               </a>
-              <a href="#about" className="text-foreground hover:text-medical-green transition-colors py-2">
+              <a href="#about" className="text-foreground hover:text-medical-green transition-colors py-2" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                setIsMenuOpen(false);
+              }}>
                 حولنا
               </a>
-              <a href="#contact" className="text-foreground hover:text-medical-green transition-colors py-2">
+              <a href="#contact" className="text-foreground hover:text-medical-green transition-colors py-2" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                setIsMenuOpen(false);
+              }}>
                 تواصل معنا
               </a>
               <div className="flex flex-col space-y-3 pt-4 border-t border-border">

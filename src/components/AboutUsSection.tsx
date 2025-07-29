@@ -2,7 +2,7 @@ import { Stethoscope, BookOpen, Users, Award } from "lucide-react";
 
 const AboutUsSection = () => {
   return (
-    <section className="py-12 md:py-20 bg-gradient-to-b from-background to-medical-teal/5" dir="rtl">
+    <section id="about" className="py-12 md:py-20 bg-gradient-to-b from-background to-medical-teal/5" dir="rtl">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center mb-8 md:mb-16">

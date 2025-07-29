@@ -5,6 +5,7 @@ import TeamSection from "@/components/TeamSection";
 import YearCardsSection from "@/components/YearCardsSection";
 import QBanksSection from "@/components/QBanksSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <YearCardsSection />
       <QBanksSection />
       <FeaturesSection />
+      <ContactSection />
       <Footer />
     </div>
   );
