@@ -7,9 +7,9 @@ const Header = () => {
 
   return <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50" dir="rtl">
       <div className="container mx-auto px-4 md:px-6 py-2 md:py-4">
-        <div className="flex items-center justify-between md:justify-start">
+        <div className="flex items-center justify-between md:justify-between">
           {/* Logo - Centered on mobile, left on desktop */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 md:relative md:left-auto md:transform-none md:mr-auto">
+          <div className="flex items-center md:flex-none absolute left-1/2 transform -translate-x-1/2 md:relative md:left-auto md:transform-none">
             <img src="/lovable-uploads/7bfbfef7-3da9-447c-80c5-b6b4691b8917.png" alt="شعار McQology" className="h-6 md:h-10 w-auto" />
           </div>
           
