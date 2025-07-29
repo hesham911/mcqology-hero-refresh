@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
-
 const Header = () => {
-  return (
-    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50" dir="rtl">
+  return <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50" dir="rtl">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/7bfbfef7-3da9-447c-80c5-b6b4691b8917.png" 
-              alt="شعار McQology" 
-              className="h-10 w-auto"
-            />
+            <img src="/lovable-uploads/7bfbfef7-3da9-447c-80c5-b6b4691b8917.png" alt="شعار McQology" className="h-10 w-auto" />
           </div>
           
           {/* Navigation */}
@@ -19,12 +13,8 @@ const Header = () => {
             <a href="#home" className="text-foreground hover:text-medical-green transition-colors">
               الرئيسية
             </a>
-            <a href="#qbanks" className="text-foreground hover:text-medical-green transition-colors">
-              بنوك الأسئلة
-            </a>
-            <a href="#tutorials" className="text-foreground hover:text-medical-green transition-colors">
-              الدروس التعليمية
-            </a>
+            <a href="#qbanks" className="text-foreground hover:text-medical-green transition-colors">الفرقه</a>
+            
             <a href="#about" className="text-foreground hover:text-medical-green transition-colors">
               حولنا
             </a>
@@ -44,8 +34,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
