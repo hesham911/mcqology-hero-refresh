@@ -55,7 +55,7 @@ const tutorials = [
 
 const VideoTutorials = () => {
   return (
-    <section id="tutorials" className="py-20 bg-secondary/30" dir="rtl">
+    <section id="tutorials" className="pt-20 pb-20 bg-gradient-to-br from-background via-background to-medical-teal/5" dir="rtl">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
