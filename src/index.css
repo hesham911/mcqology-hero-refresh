@@ -126,16 +126,17 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  .animate-scroll-loop {
-    animation: scroll-loop 25s linear infinite;
+  .animate-infinite-scroll {
+    animation: infinite-scroll 20s linear infinite;
+    width: max-content;
   }
   
-  @keyframes scroll-loop {
+  @keyframes infinite-scroll {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(calc(-160px * 6 - 32px * 6));
     }
   }
 }

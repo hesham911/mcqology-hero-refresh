@@ -66,7 +66,7 @@ const QBanksSection = () => {
 
         {/* University Logos Slider */}
         <div className="relative overflow-hidden py-8">
-          <div className="flex animate-scroll-loop slider-track" 
+          <div className="flex animate-infinite-scroll" 
                onMouseEnter={e => e.currentTarget.style.animationPlayState = 'paused'}
                onMouseLeave={e => e.currentTarget.style.animationPlayState = 'running'}>
             {/* First set of universities */}
@@ -104,7 +104,7 @@ const QBanksSection = () => {
               </div>
             </div>
             
-            {/* Duplicate set for seamless loop */}
+            {/* Duplicate set for seamless infinite loop */}
             <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border mr-8">
               <img src="/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png" alt="Jordan University" className="w-20 h-20 object-contain" />
             </div>
