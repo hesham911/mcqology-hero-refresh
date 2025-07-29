@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex items-center justify-between md:justify-between">
           {/* Logo - Centered on mobile, left on desktop */}
           <div className="flex items-center md:flex-none absolute left-1/2 transform -translate-x-1/2 md:relative md:left-auto md:transform-none">
-            <img src="/lovable-uploads/7bfbfef7-3da9-447c-80c5-b6b4691b8917.png" alt="شعار McQology" className="h-6 md:h-10 w-auto" />
+            <img src="/lovable-uploads/7fee58d2-510d-45f7-9b20-fa94ba74047b.png" alt="شعار McQology" className="h-6 md:h-10 w-auto" />
           </div>
           
           {/* Desktop Navigation */}
