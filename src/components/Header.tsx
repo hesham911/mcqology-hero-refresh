@@ -21,9 +21,9 @@ const Header = () => {
             }}>
               الرئيسية
             </a>
-            <a href="#qbanks" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
+            <a href="#years" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
               e.preventDefault();
-              document.getElementById('qbanks')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('years')?.scrollIntoView({ behavior: 'smooth' });
             }}>الفرقه</a>
             
             <a href="#about" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
@@ -71,9 +71,9 @@ const Header = () => {
               }}>
                 الرئيسية
               </a>
-              <a href="#qbanks" className="text-foreground hover:text-medical-green transition-colors py-2" onClick={(e) => {
+              <a href="#years" className="text-foreground hover:text-medical-green transition-colors py-2" onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('qbanks')?.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('years')?.scrollIntoView({ behavior: 'smooth' });
                 setIsMenuOpen(false);
               }}>
                 الفرقه
