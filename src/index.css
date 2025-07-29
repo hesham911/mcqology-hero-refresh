@@ -41,11 +41,11 @@ All colors MUST be HSL.
     --input: 184 15% 90%;
     --ring: 184 100% 12%;
 
-    --medical-teal: 184 100% 12%;
-    --medical-green: 100 45% 55%;
+    --medical-teal: 184 100% 15%;
+    --medical-green: 77 73% 42%;
     --medical-blue: 200 100% 15%;
     --gradient-medical: linear-gradient(135deg, hsl(var(--medical-teal)), hsl(var(--medical-blue)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--medical-green)), hsl(100 55% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--medical-green)), hsl(77 73% 52%));
     --shadow-soft: 0 4px 20px -2px hsl(var(--medical-teal) / 0.1);
     --shadow-glow: 0 0 40px hsl(var(--medical-green) / 0.2);
 
