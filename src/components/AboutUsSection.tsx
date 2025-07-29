@@ -2,17 +2,17 @@ import { Stethoscope, BookOpen, Users, Award } from "lucide-react";
 
 const AboutUsSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-medical-teal/5" dir="rtl">
-      <div className="container mx-auto px-6">
+    <section className="py-12 md:py-20 bg-gradient-to-b from-background to-medical-teal/5" dir="rtl">
+      <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-medical-teal mb-6 font-cairo">
             من نحن؟
           </h2>
           <div className="w-24 h-1 bg-medical-green mx-auto mb-8"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8">
             <div className="space-y-6">

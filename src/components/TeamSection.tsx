@@ -37,10 +37,10 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-medical-teal/5 to-background" dir="rtl">
-      <div className="container mx-auto px-6">
+    <section className="py-12 md:py-20 bg-gradient-to-b from-medical-teal/5 to-background" dir="rtl">
+      <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-medical-teal mb-6 font-cairo">
             فريق الخبراء
           </h2>
@@ -51,7 +51,7 @@ const TeamSection = () => {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {teamMembers.map((member) => (
             <div 
               key={member.id}

@@ -3,7 +3,7 @@ import { Play, ArrowLeft } from "lucide-react";
 
 const HeroVideo = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-0" dir="rtl">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden" dir="rtl">
       {/* Background Video Placeholder */}
       <div className="absolute inset-0 z-0">
         <div className="relative w-full h-full bg-gradient-to-br from-medical-teal via-medical-blue to-medical-teal/80">
@@ -14,7 +14,7 @@ const HeroVideo = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 md:px-6 text-center text-white">
+      <div className="relative z-10 container mx-auto px-4 md:px-6 text-center text-white h-full flex items-center justify-center pt-16 md:pt-0">
         <div className="max-w-4xl mx-auto space-y-4 md:space-y-8">
           {/* Main Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold font-cairo leading-tight">

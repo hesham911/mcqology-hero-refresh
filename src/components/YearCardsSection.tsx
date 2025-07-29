@@ -71,10 +71,10 @@ const YearCardsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-medical-teal/5" dir="rtl">
-      <div className="container mx-auto px-6">
+    <section className="py-12 md:py-20 bg-gradient-to-b from-background to-medical-teal/5" dir="rtl">
+      <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-medical-teal mb-6 font-cairo">
             المراحل الدراسية
           </h2>
@@ -85,7 +85,7 @@ const YearCardsSection = () => {
         </div>
 
         {/* Year Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {yearData.map((year) => {
             const IconComponent = year.icon;
             return (
@@ -97,7 +97,7 @@ const YearCardsSection = () => {
                 <div className={`absolute inset-0 bg-gradient-to-br ${year.gradient} opacity-5 group-hover:opacity-10 transition-opacity duration-300`}></div>
                 
                 {/* Content */}
-                <div className="relative p-8">
+                <div className="relative p-4 md:p-8">
                   {/* Header */}
                   <div className="flex items-start justify-between mb-6">
                     <div className="flex-1">
@@ -160,7 +160,7 @@ const YearCardsSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-8 md:mt-16">
           <div className="inline-flex items-center space-x-4 space-x-reverse bg-gradient-to-r from-medical-teal to-medical-green rounded-2xl p-6 text-white">
             <GraduationCap className="w-8 h-8" />
             <div className="text-right">
