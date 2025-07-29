@@ -65,16 +65,20 @@ const QBanksSection = () => {
         </div>
 
         {/* University Logos Slider */}
-        <div className="relative overflow-hidden py-8" onMouseEnter={e => {
-        const track = e.currentTarget.querySelector('.slider-track') as HTMLElement;
-        if (track) track.style.animationPlayState = 'paused';
-      }} onMouseLeave={e => {
-        const track = e.currentTarget.querySelector('.slider-track') as HTMLElement;
-        if (track) track.style.animationPlayState = 'running';
-      }}>
-          <div className="flex animate-scroll space-x-8 slider-track">
-            {/* First set of logos */}
-            
+        <div className="relative overflow-hidden py-8" 
+             onMouseEnter={e => {
+               const track = e.currentTarget.querySelector('.slider-track') as HTMLElement;
+               if (track) track.style.animationPlayState = 'paused';
+             }} 
+             onMouseLeave={e => {
+               const track = e.currentTarget.querySelector('.slider-track') as HTMLElement;
+               if (track) track.style.animationPlayState = 'running';
+             }}>
+          <div className="flex animate-scroll-loop slider-track" style={{ width: 'calc(200% + 32px)' }}>
+            {/* First set of universities */}
+            <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border mx-4">
+              <img src="/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png" alt="Jordan University" className="w-20 h-20 object-contain" />
+            </div>
             <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border mx-4">
               <div className="text-center">
                 <div className="text-sm font-bold text-medical-teal">Yarmouk</div>
@@ -106,7 +110,7 @@ const QBanksSection = () => {
               </div>
             </div>
             
-            {/* Duplicate set for seamless scroll */}
+            {/* Duplicate set for seamless loop */}
             <div className="flex-shrink-0 w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center border mx-4">
               <img src="/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png" alt="Jordan University" className="w-20 h-20 object-contain" />
             </div>

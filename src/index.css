@@ -126,11 +126,11 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  .animate-scroll {
-    animation: scroll 30s linear infinite;
+  .animate-scroll-loop {
+    animation: scroll-loop 25s linear infinite;
   }
   
-  @keyframes scroll {
+  @keyframes scroll-loop {
     0% {
       transform: translateX(0);
     }
