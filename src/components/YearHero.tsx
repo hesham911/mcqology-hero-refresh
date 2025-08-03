@@ -5,13 +5,15 @@ const YearHero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-gradient-to-br from-primary/20 via-background to-secondary/20" />
-        <div 
-          className="absolute inset-0 opacity-30 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png')"
-          }}
+        <iframe 
+          className="w-full h-full object-cover"
+          src="https://www.youtube.com/embed/bBzfI3CbOvY?autoplay=1&mute=1&loop=1&playlist=bBzfI3CbOvY&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="Background Video"
         />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
       
       {/* Content */}
