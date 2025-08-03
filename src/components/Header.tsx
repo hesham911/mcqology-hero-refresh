@@ -30,6 +30,10 @@ const Header = ({
             e.preventDefault();
             scrollToSection('about');
           }}>About Us</a>}
+            {!isYearPage && <a href="#why-choose" className="text-foreground hover:text-primary transition-colors font-medium" onClick={e => {
+            e.preventDefault();
+            scrollToSection('why-choose');
+          }}>Why MCQology</a>}
             {isYearPage && <div className="relative group">
                 <a href="#universities" className="text-foreground hover:text-primary transition-colors font-medium" onClick={e => {
               e.preventDefault();
@@ -89,6 +93,13 @@ const Header = ({
             setIsMenuOpen(false);
           }}>
                   About Us
+                </a>}
+              {!isYearPage && <a href="#why-choose" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={e => {
+            e.preventDefault();
+            scrollToSection('why-choose');
+            setIsMenuOpen(false);
+          }}>
+                  Why MCQology
                 </a>}
               {isYearPage && <a href="#universities" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={e => {
             e.preventDefault();
