@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 interface HeaderProps {
   isYearPage?: boolean;
 }
@@ -70,9 +71,12 @@ const Header = ({
 
           {/* CTA Buttons - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+            <Link 
+              to="/signin"
+              className="bg-primary text-primary-foreground px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            >
               Sign In
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -132,9 +136,13 @@ const Header = ({
             </nav>
 
             <div className="flex flex-col space-y-4">
-              <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+              <Link 
+                to="/signin"
+                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Sign In
-              </button>
+              </Link>
             </div>
           </div>}
       </div>
