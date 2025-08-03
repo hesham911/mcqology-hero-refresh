@@ -41,28 +41,38 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6 text-primary-foreground">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
+                <a href="/" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#qbanks" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
+                <a href="/#qbanks" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
                   QBanks
                 </a>
               </li>
               <li>
-                <a href="#features" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
+                <a href="/#features" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
+                <a href="/#about" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
+                <a href="/#contact" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
                   Contact
+                </a>
+              </li>
+              <li>
+                <a href="/privacy" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/terms" className="text-primary-foreground/80 hover:text-medical-green transition-colors">
+                  Terms & Conditions
                 </a>
               </li>
             </ul>
