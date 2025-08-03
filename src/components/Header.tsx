@@ -46,7 +46,7 @@ const Header = ({
                 {/* Dropdown on hover */}
                 <div className="absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                   <div className="p-4">
-                    <h3 className="font-semibold text-sm text-muted-foreground mb-3">Popular Universities</h3>
+                    
                     <div className="space-y-2">
                       <a href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-muted rounded-md transition-colors">University of Cairo</a>
                       <a href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-muted rounded-md transition-colors">Alexandria University</a>
@@ -64,21 +64,14 @@ const Header = ({
           }}>Team</a>}
             {!isYearPage && <a href="#years" className="text-foreground hover:text-primary transition-colors font-medium" onClick={e => {
             e.preventDefault();
-             scrollToSection('years');
-           }}>Cohort</a>}
-             <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium" onClick={e => {
-             e.preventDefault();
-             scrollToSection('contact');
-           }}>Contact Us</a>
+            scrollToSection('years');
+          }}>Cohort</a>}
             
           </nav>
 
           {/* CTA Buttons - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link 
-              to="/signin"
-              className="bg-primary text-primary-foreground px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors"
-            >
+            <Link to="/signin" className="bg-primary text-primary-foreground px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
               Sign In
             </Link>
           </div>
@@ -140,11 +133,7 @@ const Header = ({
             </nav>
 
             <div className="flex flex-col space-y-4">
-              <Link 
-                to="/signin"
-                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors text-center"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <Link to="/signin" className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors text-center" onClick={() => setIsMenuOpen(false)}>
                 Sign In
               </Link>
             </div>
