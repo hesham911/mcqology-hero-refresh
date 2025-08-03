@@ -2,7 +2,7 @@ import { Play } from "lucide-react";
 
 const YearHero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <iframe 
@@ -23,12 +23,12 @@ const YearHero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-foreground to-secondary bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-lg">
             Welcome to Your
-            <span className="block text-accent"> Medical Journey</span>
+            <span className="block text-white"> Medical Journey</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
             Learn how to master medical education with our comprehensive platform. 
             Watch our tutorial to get started with interactive learning.
           </p>
@@ -38,7 +38,7 @@ const YearHero = () => {
               Start Learning Now
             </button>
             
-            <button className="group flex items-center gap-3 bg-background/10 backdrop-blur-sm border border-border hover:bg-background/20 text-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+            <button className="group flex items-center gap-3 bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300">
               <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
               Watch Platform Tutorial
             </button>
@@ -47,16 +47,16 @@ const YearHero = () => {
           {/* Platform Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">50K+</div>
-              <div className="text-muted-foreground">Practice Questions</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg">50K+</div>
+              <div className="text-white/80 drop-shadow-md">Practice Questions</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">25+</div>
-              <div className="text-muted-foreground">Medical Courses</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg">25+</div>
+              <div className="text-white/80 drop-shadow-md">Medical Courses</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">95%</div>
-              <div className="text-muted-foreground">Success Rate</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg">95%</div>
+              <div className="text-white/80 drop-shadow-md">Success Rate</div>
             </div>
           </div>
         </div>
@@ -70,8 +70,8 @@ const YearHero = () => {
           nextSection?.scrollIntoView({ behavior: 'smooth' });
         }}
       >
-        <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center hover:bg-primary/10 transition-colors">
-          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
+        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center hover:bg-white/10 transition-colors">
+          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>
