@@ -1,0 +1,125 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { BookOpen, Clock, Users, Star } from "lucide-react";
+
+const courses = [
+  {
+    id: 1,
+    title: "General Medicine",
+    description: "Comprehensive medical fundamentals and clinical practice",
+    duration: "12 weeks",
+    students: "2.5K",
+    rating: 4.8,
+    image: "/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png"
+  },
+  {
+    id: 2,
+    title: "Surgery Fundamentals",
+    description: "Essential surgical techniques and procedures",
+    duration: "16 weeks",
+    students: "1.8K",
+    rating: 4.9,
+    image: "/lovable-uploads/7bfbfef7-3da9-447c-80c5-b6b4691b8917.png"
+  },
+  {
+    id: 3,
+    title: "Cardiology",
+    description: "Heart and cardiovascular system specialization",
+    duration: "14 weeks",
+    students: "1.2K",
+    rating: 4.7,
+    image: "/lovable-uploads/7fee58d2-510d-45f7-9b20-fa94ba74047b.png"
+  },
+  {
+    id: 4,
+    title: "Neurology",
+    description: "Brain and nervous system medical practice",
+    duration: "18 weeks",
+    students: "980",
+    rating: 4.8,
+    image: "/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png"
+  },
+  {
+    id: 5,
+    title: "Pediatrics",
+    description: "Specialized care for children and adolescents",
+    duration: "15 weeks",
+    students: "1.5K",
+    rating: 4.9,
+    image: "/lovable-uploads/7bfbfef7-3da9-447c-80c5-b6b4691b8917.png"
+  },
+  {
+    id: 6,
+    title: "Emergency Medicine",
+    description: "Critical care and emergency response training",
+    duration: "10 weeks",
+    students: "2.1K",
+    rating: 4.6,
+    image: "/lovable-uploads/7fee58d2-510d-45f7-9b20-fa94ba74047b.png"
+  }
+];
+
+const CoursesSection = () => {
+  return (
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Featured Medical Courses
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Explore our comprehensive medical courses designed by experts to enhance your knowledge and skills
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {courses.map((course) => (
+            <Card key={course.id} className="group hover:shadow-lg transition-all duration-300 hover:scale-105 border-border bg-card">
+              <div className="relative overflow-hidden rounded-t-lg">
+                <img 
+                  src={course.image} 
+                  alt={course.title}
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm px-2 py-1 rounded-full flex items-center gap-1">
+                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  <span className="text-sm font-semibold">{course.rating}</span>
+                </div>
+              </div>
+              
+              <CardHeader>
+                <CardTitle className="text-xl font-bold">{course.title}</CardTitle>
+                <p className="text-muted-foreground">{course.description}</p>
+              </CardHeader>
+              
+              <CardContent>
+                <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
+                  <div className="flex items-center gap-1">
+                    <Clock className="w-4 h-4" />
+                    {course.duration}
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Users className="w-4 h-4" />
+                    {course.students}
+                  </div>
+                </div>
+                
+                <button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2">
+                  <BookOpen className="w-4 h-4" />
+                  Start Course
+                </button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        
+        <div className="text-center">
+          <button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+            View All Courses
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CoursesSection;
