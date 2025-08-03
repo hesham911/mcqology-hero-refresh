@@ -9,7 +9,7 @@ const universities = [
     students: "10K+",
     programs: "25+",
     ranking: "#1",
-    image: "/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     description: "Leading medical education institution with cutting-edge research facilities"
   },
   {
@@ -29,7 +29,7 @@ const universities = [
     students: "7.2K+",
     programs: "20+",
     ranking: "#3",
-    image: "/lovable-uploads/7fee58d2-510d-45f7-9b20-fa94ba74047b.png",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e24f",
     description: "Pioneer in translational medicine and biomedical innovation"
   },
   {
@@ -39,7 +39,7 @@ const universities = [
     students: "6.8K+",
     programs: "18+",
     ranking: "#4",
-    image: "/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png",
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     description: "Excellence in patient care education and medical training"
   }
 ];
