@@ -1,22 +1,12 @@
 import { Play } from "lucide-react";
-
 const YearHero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
-        <iframe 
-          className="absolute top-1/2 left-1/2 w-[177.77vh] h-[56.25vw] min-w-full min-h-full"
-          style={{ 
-            transform: 'translate(-50%, -50%)',
-            pointerEvents: 'none'
-          }}
-          src="https://www.youtube.com/embed/bBzfI3CbOvY?autoplay=1&mute=1&loop=1&playlist=bBzfI3CbOvY&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="Background Video"
-        />
+        <iframe className="absolute top-1/2 left-1/2 w-[177.77vh] h-[56.25vw] min-w-full min-h-full" style={{
+        transform: 'translate(-50%, -50%)',
+        pointerEvents: 'none'
+      }} src="https://www.youtube.com/embed/bBzfI3CbOvY?autoplay=1&mute=1&loop=1&playlist=bBzfI3CbOvY&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="Background Video" />
         <div className="absolute inset-0 bg-black/40" />
       </div>
       
@@ -25,7 +15,7 @@ const YearHero = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-foreground to-secondary bg-clip-text text-transparent">
             Welcome to Your
-            <span className="block text-accent"> Medical Journey</span>
+            <span className="block text-[#d8ffd8]"> Medical Journey</span>
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
@@ -63,19 +53,16 @@ const YearHero = () => {
       </div>
       
       {/* Scroll Indicator */}
-      <div 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
-        onClick={() => {
-          const nextSection = document.querySelector('#courses-section');
-          nextSection?.scrollIntoView({ behavior: 'smooth' });
-        }}
-      >
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer" onClick={() => {
+      const nextSection = document.querySelector('#courses-section');
+      nextSection?.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }}>
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center hover:bg-white/10 transition-colors">
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default YearHero;
