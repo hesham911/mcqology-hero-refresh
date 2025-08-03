@@ -1,6 +1,9 @@
 import { GraduationCap, BookOpen, Users, Trophy } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const YearCardsSection = () => {
+  const navigate = useNavigate();
+  
   const yearData = [
     {
       id: 1,
@@ -147,7 +150,10 @@ const YearCardsSection = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <button className={`w-full bg-gradient-to-r ${year.gradient} text-white py-3 px-6 rounded-xl font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 hover:scale-105`}>
+                  <button 
+                    onClick={() => navigate('/year')}
+                    className={`w-full bg-gradient-to-r ${year.gradient} text-white py-3 px-6 rounded-xl font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 hover:scale-105`}
+                  >
                     Enter {year.title}
                   </button>
                 </div>
