@@ -33,6 +33,12 @@ const HeroVideo = () => {
             <Button 
               size="lg" 
               className="bg-medical-green hover:bg-medical-green/90 text-white px-8 py-4 text-xl font-semibold rounded-full shadow-glow transition-all duration-300 hover:scale-105"
+              onClick={() => {
+                const yearsSection = document.getElementById('years');
+                if (yearsSection) {
+                  yearsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               Start Your Journey
               <ArrowLeft className="w-6 h-6 ml-3" />
@@ -53,6 +59,12 @@ const HeroVideo = () => {
             <Button 
               size="lg" 
               className="bg-medical-green hover:bg-medical-green/90 text-white px-6 py-3 text-lg font-semibold rounded-full shadow-glow transition-all duration-300 w-full max-w-xs"
+              onClick={() => {
+                const yearsSection = document.getElementById('years');
+                if (yearsSection) {
+                  yearsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               Start Your Journey
               <ArrowLeft className="w-5 h-5 ml-2" />
