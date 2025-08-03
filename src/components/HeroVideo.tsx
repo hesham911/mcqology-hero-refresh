@@ -79,11 +79,16 @@ const HeroVideo = () => {
 
       {/* Scroll Indicator */}
       <button 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce cursor-pointer hover:text-white/80 transition-colors"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce cursor-pointer hover:text-white/80 transition-colors z-20"
         onClick={() => {
-          const nextSection = document.getElementById('about') || document.querySelector('section:nth-child(2)');
-          if (nextSection) {
-            nextSection.scrollIntoView({ behavior: 'smooth' });
+          console.log('Scroll button clicked');
+          const aboutSection = document.getElementById('about');
+          console.log('About section found:', aboutSection);
+          if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+          } else {
+            // Fallback: scroll to next section
+            window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
           }
         }}
         aria-label="Scroll to next section"
