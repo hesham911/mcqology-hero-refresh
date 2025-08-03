@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import YearPageHeader from "@/components/YearPageHeader";
 import YearHero from "@/components/YearHero";
 import CoursesSection from "@/components/CoursesSection";
 import UniversitiesSection from "@/components/UniversitiesSection";
@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const YearPage = () => {
   return (
     <div className="min-h-screen">
-      <Header isYearPage={true} />
+      <YearPageHeader />
       <YearHero />
       <CoursesSection />
       <UniversitiesSection />
