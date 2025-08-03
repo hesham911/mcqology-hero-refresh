@@ -9,7 +9,7 @@ const courses = [
     duration: "12 weeks",
     students: "2.5K",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1500673922987-e212871ec22"
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=300&fit=crop"
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const courses = [
     duration: "14 weeks",
     students: "1.2K",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1472396961693-142e6e229027"
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const courses = [
     duration: "18 weeks",
     students: "980",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop"
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const courses = [
     duration: "15 weeks",
     students: "1.5K",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07"
+    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=300&fit=crop"
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ const courses = [
     duration: "10 weeks",
     students: "2.1K",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb"
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop"
   }
 ];
 
