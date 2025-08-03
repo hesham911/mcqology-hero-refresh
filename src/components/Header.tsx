@@ -57,10 +57,10 @@ const Header = ({
             e.preventDefault();
             scrollToSection('team');
           }}>Team</a>}
-            {!isYearPage && <a href="#features" className="text-foreground hover:text-primary transition-colors font-medium" onClick={e => {
+            {!isYearPage && <a href="#years" className="text-foreground hover:text-primary transition-colors font-medium" onClick={e => {
             e.preventDefault();
-            scrollToSection('features');
-          }}>Features</a>}
+            scrollToSection('years');
+          }}>Years</a>}
             
           </nav>
 
@@ -104,12 +104,12 @@ const Header = ({
           }}>
                   Team
                 </a>}
-              {!isYearPage && <a href="#features" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={e => {
+               {!isYearPage && <a href="#years" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={e => {
             e.preventDefault();
-            scrollToSection('features');
+            scrollToSection('years');
             setIsMenuOpen(false);
           }}>
-                  Features
+                  Years
                 </a>}
               <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={e => {
             e.preventDefault();
