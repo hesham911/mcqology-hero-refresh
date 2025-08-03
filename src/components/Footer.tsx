@@ -101,27 +101,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Section */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/20">
-          <div className="text-center">
-            <h3 className="text-lg font-semibold mb-4 text-primary-foreground">
-              Stay Updated with McQology
-            </h3>
-            <p className="text-primary-foreground/80 mb-6 max-w-md mx-auto">
-              Get the latest updates on new question banks and features.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-2 rounded-md bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder-primary-foreground/60 focus:outline-none focus:ring-2 focus:ring-medical-green"
-              />
-              <Button variant="accent" size="sm">
-                Subscribe
-              </Button>
-            </div>
-          </div>
-        </div>
 
         {/* Social Links & Copyright */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center">
