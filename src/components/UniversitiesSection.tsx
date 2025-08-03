@@ -112,7 +112,7 @@ const UniversitiesSection = () => {
           ))}
         </div>
         
-        <div className="text-center">
+        <div className="text-center mt-16">
           <a href="/universities">
             <button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
               View All Universities
