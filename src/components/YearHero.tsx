@@ -63,8 +63,14 @@ const YearHero = () => {
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
+      <div 
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
+        onClick={() => {
+          const nextSection = document.querySelector('#courses-section');
+          nextSection?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
+        <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center hover:bg-primary/10 transition-colors">
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
