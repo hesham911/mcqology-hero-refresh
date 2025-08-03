@@ -6,8 +6,11 @@ const YearHero = () => {
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <iframe 
-          className="absolute top-0 left-0 w-full h-full min-w-full min-h-full"
-          style={{ transform: 'scale(1.02)' }}
+          className="absolute top-1/2 left-1/2 w-[177.77vh] h-[56.25vw] min-w-full min-h-full"
+          style={{ 
+            transform: 'translate(-50%, -50%)',
+            pointerEvents: 'none'
+          }}
           src="https://www.youtube.com/embed/bBzfI3CbOvY?autoplay=1&mute=1&loop=1&playlist=bBzfI3CbOvY&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
