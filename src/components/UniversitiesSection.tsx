@@ -59,7 +59,7 @@ const UniversitiesSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {universities.map((university) => (
-            <Card key={university.id} className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-border bg-card relative overflow-hidden">
+            <Card key={university.id} className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-border bg-card relative overflow-hidden h-full flex flex-col">
               <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-bold z-10">
                 {university.ranking}
               </div>
@@ -81,12 +81,12 @@ const UniversitiesSection = () => {
                 </div>
               </CardHeader>
               
-              <CardContent className="pt-2">
+              <CardContent className="pt-2 flex-grow flex flex-col">
                 <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
                   {university.description}
                 </p>
                 
-                <div className="grid grid-cols-3 gap-2 text-center">
+                <div className="grid grid-cols-3 gap-2 text-center mb-4">
                   <div className="flex flex-col items-center">
                     <Users className="w-4 h-4 text-primary mb-1" />
                     <span className="text-xs font-semibold">{university.students}</span>
@@ -104,7 +104,7 @@ const UniversitiesSection = () => {
                   </div>
                 </div>
                 
-                <button className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground py-2 rounded-lg font-semibold transition-colors text-sm">
+                <button className="w-full mt-auto bg-primary hover:bg-primary/90 text-primary-foreground py-2 rounded-lg font-semibold transition-colors text-sm">
                   Learn More
                 </button>
               </CardContent>
