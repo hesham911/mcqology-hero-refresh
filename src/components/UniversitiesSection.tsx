@@ -29,7 +29,7 @@ const universities = [
     students: "7.2K+",
     programs: "20+",
     ranking: "#3",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Stanford_University_seal_2003.svg/240px-Stanford_University_seal_2003.svg.png",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Stanford_University_coat_of_arms.svg/200px-Stanford_University_coat_of_arms.svg.png",
     description: "Pioneer in translational medicine and biomedical innovation"
   },
   {
