@@ -44,7 +44,7 @@ const HeroVideo = () => {
               className="border-2 border-white text-white hover:bg-white hover:text-medical-teal px-8 py-4 text-xl font-semibold rounded-full backdrop-blur-sm transition-all duration-300 group"
             >
               <Play className="w-6 h-6 mr-3" />
-              <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-medical-teal group-hover:text-medical-teal">Watch Intro Video</span>
+              <span className="opacity-100 group-hover:opacity-100 transition-opacity duration-300 text-white group-hover:text-medical-teal">Watch Intro Video</span>
             </Button>
           </div>
 
