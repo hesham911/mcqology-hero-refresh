@@ -29,7 +29,7 @@ const universities = [
     students: "7.2K+",
     programs: "20+",
     ranking: "#3",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Stanford_University_coat_of_arms.svg/200px-Stanford_University_coat_of_arms.svg.png",
+    image: "/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png",
     description: "Pioneer in translational medicine and biomedical innovation"
   },
   {
@@ -39,7 +39,7 @@ const universities = [
     students: "6.8K+",
     programs: "18+",
     ranking: "#4",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mayo_Clinic_logo.svg/240px-Mayo_Clinic_logo.svg.png",
+    image: "/lovable-uploads/7fee58d2-510d-45f7-9b20-fa94ba74047b.png",
     description: "Excellence in patient care education and medical training"
   }
 ];
