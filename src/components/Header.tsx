@@ -31,6 +31,10 @@ const Header = ({ isYearPage = false }: HeaderProps) => {
               e.preventDefault();
               scrollToSection('about');
             }}>About Us</a>}
+            {!isYearPage && <a href="#years" className="text-foreground hover:text-primary transition-colors font-medium" onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('years');
+            }}>Years</a>}
             {isYearPage && (
               <div className="relative group">
                 <a 
@@ -116,6 +120,19 @@ const Header = ({ isYearPage = false }: HeaderProps) => {
                   }}
                 >
                   About Us
+                </a>
+              )}
+              {!isYearPage && (
+                <a 
+                  href="#years" 
+                  className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection('years');
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  Years
                 </a>
               )}
               {isYearPage && (
