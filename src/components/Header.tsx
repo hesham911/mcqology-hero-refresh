@@ -66,11 +66,8 @@ const Header = ({
 
           {/* CTA Buttons - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="text-foreground hover:text-primary transition-colors font-medium">
-              Sign In
-            </button>
             <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-              {isYearPage ? "Join Now" : "Get Started"}
+              Sign In
             </button>
           </div>
 
@@ -124,11 +121,8 @@ const Header = ({
             </nav>
 
             <div className="flex flex-col space-y-4">
-              <button className="text-foreground hover:text-primary transition-colors font-medium text-lg">
-                Sign In
-              </button>
               <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-                {isYearPage ? "Join Now" : "Get Started"}
+                Sign In
               </button>
             </div>
           </div>}
