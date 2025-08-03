@@ -23,9 +23,9 @@ const YearHero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-medical bg-clip-text text-transparent drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-foreground to-secondary bg-clip-text text-transparent">
             Welcome to Your
-            <span className="block"> Medical Journey</span>
+            <span className="block text-accent"> Medical Journey</span>
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
