@@ -37,13 +37,13 @@ const SignUp = () => {
         <div className="text-center text-white space-y-8">
           <div className="space-y-6">
             <div className="flex justify-center">
-              <div className="bg-white rounded-lg p-3 shadow-soft">
+              <Link to="/" className="bg-white rounded-lg p-3 shadow-soft hover:shadow-md transition-shadow cursor-pointer">
                 <img 
                   src="/lovable-uploads/7fee58d2-510d-45f7-9b20-fa94ba74047b.png" 
                   alt="McQology Logo" 
                   className="h-12 w-auto"
                 />
-              </div>
+              </Link>
             </div>
             
             <div className="space-y-4">
