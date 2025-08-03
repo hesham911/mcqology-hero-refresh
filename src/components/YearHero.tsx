@@ -45,18 +45,27 @@ const YearHero = () => {
           </div>
           
           {/* Platform Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg">50K+</div>
-              <div className="text-white/80 drop-shadow-md">Practice Questions</div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="group text-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in">
+              <div className="text-4xl md:text-5xl font-bold text-white mb-3 drop-shadow-lg group-hover:scale-110 transition-transform duration-300">
+                50K+
+              </div>
+              <div className="text-white/90 drop-shadow-md font-medium">Practice Questions</div>
+              <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-3 rounded-full"></div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg">25+</div>
-              <div className="text-white/80 drop-shadow-md">Medical Courses</div>
+            <div className="group text-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-3 drop-shadow-lg group-hover:scale-110 transition-transform duration-300">
+                25+
+              </div>
+              <div className="text-white/90 drop-shadow-md font-medium">Medical Courses</div>
+              <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-3 rounded-full"></div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg">95%</div>
-              <div className="text-white/80 drop-shadow-md">Success Rate</div>
+            <div className="group text-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-3 drop-shadow-lg group-hover:scale-110 transition-transform duration-300">
+                95%
+              </div>
+              <div className="text-white/90 drop-shadow-md font-medium">Success Rate</div>
+              <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-3 rounded-full"></div>
             </div>
           </div>
         </div>
