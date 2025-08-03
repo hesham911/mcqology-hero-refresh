@@ -120,8 +120,14 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
+  html, body {
     @apply bg-background text-foreground font-sans;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    min-height: 100vh;
   }
 }
 
