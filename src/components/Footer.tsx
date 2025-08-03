@@ -7,7 +7,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <img src="/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png" alt="McQology Logo" className="h-8 w-auto mb-4 brightness-0 invert" />
+              <img src="/lovable-uploads/540413e5-ab8a-41ea-815e-0c2ea9f5d421.png" alt="McQology Logo" className="h-8 w-auto mb-4 bg-white rounded px-2 py-1" />
               <p className="text-primary-foreground/80 leading-relaxed max-w-md">
                 Empowering medical students across Jordan with comprehensive MCQ practice. 
                 Master every question, excel in every exam.
