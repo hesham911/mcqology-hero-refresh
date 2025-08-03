@@ -36,12 +36,12 @@ const SignUp = () => {
         {/* Left side - Welcome content */}
         <div className="text-center text-white space-y-8">
           <div className="space-y-6">
-            <div className="w-24 h-24 mx-auto bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
-              <div className="w-12 h-12 bg-medical-green rounded-full flex items-center justify-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 4v16m8-8H4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/7fee58d2-510d-45f7-9b20-fa94ba74047b.png" 
+                alt="McQology Logo" 
+                className="h-16 w-auto"
+              />
             </div>
             
             <div className="space-y-4">
