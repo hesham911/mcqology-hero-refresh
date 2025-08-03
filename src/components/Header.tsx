@@ -64,8 +64,12 @@ const Header = ({
           }}>Team</a>}
             {!isYearPage && <a href="#years" className="text-foreground hover:text-primary transition-colors font-medium" onClick={e => {
             e.preventDefault();
-            scrollToSection('years');
-          }}>Cohort</a>}
+             scrollToSection('years');
+           }}>Cohort</a>}
+             <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium" onClick={e => {
+             e.preventDefault();
+             scrollToSection('contact');
+           }}>Contact Us</a>
             
           </nav>
 
