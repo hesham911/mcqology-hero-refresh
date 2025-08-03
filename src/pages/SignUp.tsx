@@ -33,25 +33,43 @@ const SignUp = () => {
   return (
     <div className="min-h-screen bg-gradient-medical flex items-center justify-center p-4">
       <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        {/* Left side - Logo and branding */}
-        <div className="text-center lg:text-left text-white space-y-6">
-          <div className="flex justify-center lg:justify-start">
-            <img 
-              src="/lovable-uploads/7fee58d2-510d-45f7-9b20-fa94ba74047b.png" 
-              alt="McQology Logo" 
-              className="h-20 w-auto"
-            />
-          </div>
-          <div className="space-y-4">
-            <h1 className="text-4xl lg:text-6xl font-bold">
-              MCQOLOGY
-            </h1>
-            <p className="text-2xl lg:text-3xl font-semibold text-medical-green">
-              MASTER EVERY MCQ
-            </p>
-            <p className="text-lg text-white/90 max-w-lg">
-              Join thousands of medical students who are mastering their MCQs with our comprehensive platform.
-            </p>
+        {/* Left side - Welcome content */}
+        <div className="text-center text-white space-y-8">
+          <div className="space-y-6">
+            <div className="w-24 h-24 mx-auto bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
+              <div className="w-12 h-12 bg-medical-green rounded-full flex items-center justify-center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4v16m8-8H4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            
+            <div className="space-y-4">
+              <h1 className="text-5xl font-bold">
+                Join McQology
+              </h1>
+              <p className="text-xl text-medical-green font-semibold">
+                Start Your Medical Journey
+              </p>
+              <p className="text-lg text-white/80 max-w-md mx-auto leading-relaxed">
+                Create your account and join thousands of medical students mastering MCQs with our comprehensive platform.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-3 gap-6 max-w-sm mx-auto pt-4">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-medical-green">FREE</div>
+                <div className="text-sm text-white/70">To Start</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-medical-green">24/7</div>
+                <div className="text-sm text-white/70">Access</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-medical-green">∞</div>
+                <div className="text-sm text-white/70">Practice</div>
+              </div>
+            </div>
           </div>
         </div>
 
