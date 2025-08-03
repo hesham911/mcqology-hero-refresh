@@ -41,10 +41,10 @@ const HeroVideo = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-medical-teal px-8 py-4 text-xl font-semibold rounded-full backdrop-blur-sm transition-all duration-300 group"
+              className="border-2 border-white hover:bg-white px-8 py-4 text-xl font-semibold rounded-full backdrop-blur-sm transition-all duration-300 group"
             >
-              <Play className="w-6 h-6 mr-3" />
-              <span className="opacity-100 group-hover:opacity-100 transition-opacity duration-300 text-white group-hover:text-medical-teal">Watch Intro Video</span>
+              <Play className="w-6 h-6 mr-3 text-white group-hover:text-medical-teal" />
+              <span className="text-white group-hover:text-medical-teal">Watch Intro Video</span>
             </Button>
           </div>
 
