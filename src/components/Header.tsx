@@ -31,10 +31,35 @@ const Header = ({ isYearPage = false }: HeaderProps) => {
               e.preventDefault();
               scrollToSection('about');
             }}>About Us</a>}
-            {isYearPage && <a href="#universities" className="text-foreground hover:text-primary transition-colors font-medium" onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('universities');
-            }}>Universities</a>}
+            {isYearPage && (
+              <div className="relative group">
+                <a 
+                  href="#universities" 
+                  className="text-foreground hover:text-primary transition-colors font-medium" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection('universities');
+                  }}
+                >
+                  Universities
+                </a>
+                
+                {/* Dropdown on hover */}
+                <div className="absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <div className="p-4">
+                    <h3 className="font-semibold text-sm text-muted-foreground mb-3">Popular Universities</h3>
+                    <div className="space-y-2">
+                      <a href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-muted rounded-md transition-colors">University of Cairo</a>
+                      <a href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-muted rounded-md transition-colors">Alexandria University</a>
+                      <a href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-muted rounded-md transition-colors">Ain Shams University</a>
+                      <a href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-muted rounded-md transition-colors">Assiut University</a>
+                      <a href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-muted rounded-md transition-colors">Mansoura University</a>
+                      <a href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-muted rounded-md transition-colors">Zagazig University</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
             {!isYearPage && <a href="#team" className="text-foreground hover:text-primary transition-colors font-medium" onClick={(e) => {
               e.preventDefault();
               scrollToSection('team');
