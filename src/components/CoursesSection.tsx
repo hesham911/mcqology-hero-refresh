@@ -73,7 +73,7 @@ const CoursesSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {courses.map((course) => (
-            <Card key={course.id} className="group hover:shadow-lg transition-all duration-300 hover:scale-105 border-border bg-card">
+            <Card key={course.id} className="group hover:shadow-lg transition-all duration-300 hover:scale-105 border-border bg-card h-full flex flex-col">
               <div className="relative overflow-hidden rounded-t-lg">
                 <img 
                   src={course.image} 
@@ -86,12 +86,12 @@ const CoursesSection = () => {
                 </div>
               </div>
               
-              <CardHeader>
+              <CardHeader className="flex-grow">
                 <CardTitle className="text-xl font-bold">{course.title}</CardTitle>
                 <p className="text-muted-foreground">{course.description}</p>
               </CardHeader>
               
-              <CardContent>
+              <CardContent className="mt-auto">
                 <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
                   <div className="flex items-center gap-1">
                     <Clock className="w-4 h-4" />
