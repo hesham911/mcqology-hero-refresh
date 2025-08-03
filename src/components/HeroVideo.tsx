@@ -3,7 +3,7 @@ import { Play, ArrowLeft } from "lucide-react";
 
 const HeroVideo = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden" dir="rtl">
+    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video Placeholder */}
       <div className="absolute inset-0 z-0">
         <div className="relative w-full h-full bg-gradient-to-br from-medical-teal via-medical-blue to-medical-teal/80">
@@ -17,15 +17,15 @@ const HeroVideo = () => {
       <div className="relative z-10 container mx-auto px-4 md:px-6 text-center text-white h-full flex items-center justify-center pt-16 md:pt-0">
         <div className="max-w-4xl mx-auto space-y-4 md:space-y-8">
           {/* Main Headline */}
-          <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold font-cairo leading-tight">
-            المنصة التعليمية الطبية
+          <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight">
+            Leading Medical Education
             <br />
-            <span className="text-medical-green">الرائدة باللغة العربية</span>
+            <span className="text-medical-green">Platform</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-            نقدم لك أحدث الطرق التعليمية والمحتوى الطبي المتخصص لمساعدتك في تحقيق أهدافك الأكاديمية والمهنية
+            We provide the latest educational methods and specialized medical content to help you achieve your academic and professional goals
           </p>
 
           {/* CTA Buttons - Hidden on mobile, shown on desktop */}
@@ -34,8 +34,8 @@ const HeroVideo = () => {
               size="lg" 
               className="bg-medical-green hover:bg-medical-green/90 text-white px-8 py-4 text-xl font-semibold rounded-full shadow-glow transition-all duration-300 hover:scale-105"
             >
-              ابدأ رحلتك الآن
-              <ArrowLeft className="w-6 h-6 mr-3" />
+              Start Your Journey
+              <ArrowLeft className="w-6 h-6 ml-3" />
             </Button>
             
             <Button 
@@ -43,8 +43,8 @@ const HeroVideo = () => {
               size="lg"
               className="border-2 border-white text-white hover:bg-white hover:text-medical-teal px-8 py-4 text-xl font-semibold rounded-full backdrop-blur-sm transition-all duration-300 group"
             >
-              <Play className="w-6 h-6 ml-3" />
-              <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">شاهد الفيديو التعريفي</span>
+              <Play className="w-6 h-6 mr-3" />
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">Watch Intro Video</span>
             </Button>
           </div>
 
@@ -54,8 +54,8 @@ const HeroVideo = () => {
               size="lg" 
               className="bg-medical-green hover:bg-medical-green/90 text-white px-6 py-3 text-lg font-semibold rounded-full shadow-glow transition-all duration-300 w-full max-w-xs"
             >
-              ابدأ رحلتك الآن
-              <ArrowLeft className="w-5 h-5 mr-2" />
+              Start Your Journey
+              <ArrowLeft className="w-5 h-5 ml-2" />
             </Button>
           </div>
 
@@ -63,15 +63,15 @@ const HeroVideo = () => {
           <div className="flex flex-wrap justify-center gap-4 md:gap-8 pt-6 md:pt-12">
             <div className="text-center">
               <div className="text-xl md:text-3xl font-bold text-medical-green">10,000+</div>
-              <div className="text-white/80 text-sm md:text-base">سؤال تفاعلي</div>
+              <div className="text-white/80 text-sm md:text-base">Interactive Questions</div>
             </div>
             <div className="text-center">
               <div className="text-xl md:text-3xl font-bold text-medical-green">5,000+</div>
-              <div className="text-white/80 text-sm md:text-base">طالب نشط</div>
+              <div className="text-white/80 text-sm md:text-base">Active Students</div>
             </div>
             <div className="text-center">
               <div className="text-xl md:text-3xl font-bold text-medical-green">95%</div>
-              <div className="text-white/80 text-sm md:text-base">معدل النجاح</div>
+              <div className="text-white/80 text-sm md:text-base">Success Rate</div>
             </div>
           </div>
         </div>

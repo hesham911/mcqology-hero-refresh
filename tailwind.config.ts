@@ -19,8 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'cairo': ['Cairo', 'sans-serif'],
-				'tajawal': ['Tajawal', 'sans-serif'],
+				'sans': ['Inter', 'Poppins', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

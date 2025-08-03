@@ -5,48 +5,48 @@ import { Menu, X } from "lucide-react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  return <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50" dir="rtl">
+  return <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-4 md:px-6 py-2 md:py-4">
         <div className="flex items-center justify-between md:justify-between">
           {/* Logo - Centered on mobile, left on desktop */}
           <div className="flex items-center md:flex-none absolute left-1/2 transform -translate-x-1/2 md:relative md:left-auto md:transform-none">
-            <img src="/lovable-uploads/7fee58d2-510d-45f7-9b20-fa94ba74047b.png" alt="شعار McQology" className="h-6 md:h-10 w-auto" />
+            <img src="/lovable-uploads/7fee58d2-510d-45f7-9b20-fa94ba74047b.png" alt="McQology Logo" className="h-6 md:h-10 w-auto" />
           </div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 space-x-reverse">
+          <nav className="hidden md:flex items-center space-x-8">
             <a href="#home" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
               e.preventDefault();
               document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
             }}>
-              الرئيسية
+              Home
             </a>
             <a href="#years" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
               e.preventDefault();
               document.getElementById('years')?.scrollIntoView({ behavior: 'smooth' });
-            }}>الفرقه</a>
+            }}>Years</a>
             
             <a href="#about" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
               e.preventDefault();
               document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
             }}>
-              حولنا
+              About Us
             </a>
             <a href="#contact" className="text-foreground hover:text-medical-green transition-colors" onClick={(e) => {
               e.preventDefault();
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
             }}>
-              تواصل معنا
+              Contact Us
             </a>
           </nav>
 
           {/* Desktop CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4 space-x-reverse">
+          <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" size="sm">
-              تسجيل الدخول
+              Sign In
             </Button>
             <Button variant="medical" size="sm">
-              ابدأ الآن
+              Get Started
             </Button>
           </div>
 
@@ -54,7 +54,7 @@ const Header = () => {
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 text-foreground hover:text-medical-green transition-colors relative z-10"
-            aria-label="قائمة التنقل"
+            aria-label="Navigation menu"
           >
             {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -69,35 +69,35 @@ const Header = () => {
                 document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
                 setIsMenuOpen(false);
               }}>
-                الرئيسية
+                Home
               </a>
               <a href="#years" className="text-foreground hover:text-medical-green transition-colors py-2" onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('years')?.scrollIntoView({ behavior: 'smooth' });
                 setIsMenuOpen(false);
               }}>
-                الفرقه
+                Years
               </a>
               <a href="#about" className="text-foreground hover:text-medical-green transition-colors py-2" onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
                 setIsMenuOpen(false);
               }}>
-                حولنا
+                About Us
               </a>
               <a href="#contact" className="text-foreground hover:text-medical-green transition-colors py-2" onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                 setIsMenuOpen(false);
               }}>
-                تواصل معنا
+                Contact Us
               </a>
               <div className="flex flex-col space-y-3 pt-4 border-t border-border">
                 <Button variant="outline" size="sm" className="w-full">
-                  تسجيل الدخول
+                  Sign In
                 </Button>
                 <Button variant="medical" size="sm" className="w-full">
-                  ابدأ الآن
+                  Get Started
                 </Button>
               </div>
             </nav>

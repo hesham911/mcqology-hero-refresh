@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* RTL Support */
-[dir="rtl"] {
-  text-align: right;
+/* LTR Support */
+[dir="ltr"] {
+  text-align: left;
 }
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
@@ -121,7 +121,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-cairo;
+    @apply bg-background text-foreground font-sans;
   }
 }
 
