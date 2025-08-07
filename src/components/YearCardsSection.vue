@@ -179,5 +179,9 @@ const yearData = [
 
 const navigateToYear = () => {
   router.push('/year')
+  // Scroll to top after navigation
+  setTimeout(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, 100)
 }
 </script> 
