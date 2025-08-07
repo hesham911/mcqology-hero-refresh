@@ -123,7 +123,15 @@ const TeamSection = () => {
             <p className="text-white/90 mb-6">
               Want to be part of the medical education journey? Contact us today
             </p>
-            <button className="bg-white text-medical-teal px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200">
+            <button 
+              className="bg-white text-medical-teal px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200"
+              onClick={() => {
+                const contactSection = document.getElementById('contact-section');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               Contact Us
             </button>
           </div>
