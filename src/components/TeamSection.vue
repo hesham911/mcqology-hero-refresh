@@ -84,7 +84,10 @@
           <p class="text-white/90 mb-6">
             Want to be part of the medical education journey? Contact us today
           </p>
-          <button class="bg-white text-medical-teal px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200">
+          <button 
+            @click="scrollToContact"
+            class="bg-white text-medical-teal px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200"
+          >
             Contact Us
           </button>
         </div>
@@ -130,4 +133,11 @@ const teamMembers = [
     specialization: "Pediatrics and Adolescent Medicine"
   }
 ]
+
+const scrollToContact = () => {
+  const contactSection = document.getElementById('contact-section')
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 </script> 
