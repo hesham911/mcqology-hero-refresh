@@ -52,9 +52,12 @@
       </div>
       
       <div class="text-center">
-        <button class="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+        <router-link 
+          to="/courses"
+          class="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 inline-block"
+        >
           View All Courses
-        </button>
+        </router-link>
       </div>
     </div>
   </section>

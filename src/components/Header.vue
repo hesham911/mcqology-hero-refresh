@@ -16,6 +16,9 @@
           <a v-if="!isYearPage" href="#why-choose" class="text-foreground hover:text-primary transition-colors font-medium" @click.prevent="scrollToSection('why-choose')">
             Why MCQology
           </a>
+          <router-link to="/courses" class="text-foreground hover:text-primary transition-colors font-medium">
+            Courses
+          </router-link>
           <div v-if="isYearPage" class="relative group">
             <a href="#universities" class="text-foreground hover:text-primary transition-colors font-medium" @click.prevent="scrollToSection('universities')">
               Universities
@@ -69,6 +72,9 @@
           <a v-if="!isYearPage" href="#why-choose" class="text-foreground hover:text-primary transition-colors font-medium text-lg" @click.prevent="scrollToSection('why-choose'); isMenuOpen = false">
             Why MCQology
           </a>
+          <router-link to="/courses" class="text-foreground hover:text-primary transition-colors font-medium text-lg" @click="isMenuOpen = false">
+            Courses
+          </router-link>
           <a v-if="isYearPage" href="#universities" class="text-foreground hover:text-primary transition-colors font-medium text-lg" @click.prevent="scrollToSection('universities'); isMenuOpen = false">
             Universities
           </a>

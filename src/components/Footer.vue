@@ -38,6 +38,11 @@
               </a>
             </li>
             <li>
+              <router-link to="/courses" class="text-primary-foreground/80 hover:text-medical-green transition-colors">
+                Courses
+              </router-link>
+            </li>
+            <li>
               <a href="#qbanks" class="text-primary-foreground/80 hover:text-medical-green transition-colors">
                 QBanks
               </a>

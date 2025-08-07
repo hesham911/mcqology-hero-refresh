@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Index from '@/pages/Index.vue'
 import YearPage from '@/pages/YearPage.vue'
 import UniversitiesPage from '@/pages/UniversitiesPage.vue'
+import AllCoursesPage from '@/pages/AllCoursesPage.vue'
 import SignUp from '@/pages/SignUp.vue'
 import SignIn from '@/pages/SignIn.vue'
 import Profile from '@/pages/Profile.vue'
@@ -23,6 +24,11 @@ const routes = [
     path: '/universities',
     name: 'UniversitiesPage',
     component: UniversitiesPage
+  },
+  {
+    path: '/courses',
+    name: 'AllCoursesPage',
+    component: AllCoursesPage
   },
   {
     path: '/signup',
